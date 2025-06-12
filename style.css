@@ -63,6 +63,12 @@ body {
     font-size: 1.5rem;
 }
 
+.for {
+    margin: 4px;
+    padding: 4px;
+    text-align: center;
+}
+
 .footer {
     margin: 5px;
     padding: 5px;
