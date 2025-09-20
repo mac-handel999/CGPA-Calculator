@@ -6,10 +6,10 @@
     // Score-to-point map
     const gradePoints = {
       A: 5.0,
-      B: 4.5,
-      C: 3.5,
-      D: 2.5,
-      E: 1.5,
+      B: 4.0,
+      C: 3.0,
+      D: 2.0,
+      E: 1.0,
       F: 0,
     };
 
