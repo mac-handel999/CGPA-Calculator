@@ -9,7 +9,8 @@
 body {
   font-size: 1rem;
   overflow: scroll;
-  background-image: linear-gradient(0deg,blue ,darkblue);
+  background: white;
+
 }
 
 .header {
@@ -17,12 +18,12 @@ body {
   display: flex;
   align-content: center;
   justify-content: space-between;
-  background-color: #fff;
+  background-color: wheat;
 }
 
 .logo-img {
   border-radius: 20px;
-  box-shadow: 2px 2px 2px 2px red;
+  box-shadow: 2px 2px 2px 2px black;
   
 }
 
@@ -33,9 +34,10 @@ body {
   padding: 15px;
   width: 100px;
   height: 80px;
-  border: 2px solid #A4413A;
+  border: 2px solid #fff;
   border-radius: 10px;
   background-color: wheat;
+  backdrop-filter: 20%;
   color: #fff;
   box-shadow: 2px 2px 2px 2px #000;
   font-size: 1.5rem;
@@ -48,7 +50,7 @@ body {
   height: 90px;
   border: 2px solid #fff;
   border-radius: 10px;
-  background-color: darkblue;
+  background-color: #fff;
   color: #000;
   
 }
@@ -72,7 +74,9 @@ body {
   justify-content: space-evenly;
   font-size: 0.7rem;
   font-weight: bolder;
-  background-color: #fff;
+  background-color: wheat;
+  text-shadow: 4px 4px 5px #000;
+  color: #fff;
 }
 
 .courses {
@@ -135,14 +139,22 @@ box-shadow: 2px 2px 2px 2px #000;
   justify-content: space-evenly;
 }
 
+.form-1, .form-2, .form-3 {
+background: rgba(255, 255, 255, 02);
+backdrop-filter: blur(20px);
+border: none;
+}
+
 .course-codes {
   margin-top: 8px;
   padding: 8px;
   background-color: whitesmoke;
   border-radius: 10px;
-  color: blue;
+  color: #000;
   box-shadow: 2px 3px 2px 2px #000;
   width: 130px;
+  border: none;
+  outline: none;
   
   
 }
@@ -152,8 +164,10 @@ box-shadow: 2px 2px 2px 2px #000;
   padding: 8px;
   background-color: whitesmoke;
   border-radius: 10px;
-  color: blue;
+  color: #000;
   box-shadow: 2px 3px 2px 2px #000;
+  border: none;
+  outline: none;
   
 }
 
@@ -162,9 +176,10 @@ box-shadow: 2px 2px 2px 2px #000;
   padding: 8px;
   background-color: whitesmoke;
   border-radius: 10px;
-  color: blue;
+  color: #000;
   box-shadow: 2px 3px 2px 2px #000;
-  
+  border: none;
+  outline: none;
 }
 
 .calculator-btn {
@@ -188,14 +203,15 @@ box-shadow: 2px 2px 2px 2px #000;
 
 .calc-btn:hover {
  background-color: #fff;
- color: blue;
+ color: black;
   text-shadow: 2px 2px 5px  #000;
 }
 
 .result-view {
   margin: 10px;
   padding: 10px;
-  background-color: #fff;
+  
+  backdrop-filter: blur(10px);
   border-radius: 10px;
   text-align: center;
   font-weight: bolder;

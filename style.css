@@ -6,8 +6,8 @@
 
 body {
     font-size: 0.5rem;
-    background-color: wheat;
-    background-image: linear-gradient(0deg,blue ,darkblue);
+    background-color: whitesmoke;
+ 
 }
 
 .container {
@@ -41,8 +41,8 @@ body {
 .title {
  margin: 10px;
  padding: 10px;
- color: wheat;
- text-shadow: 2px 2px 5px  #000;
+ color: white;
+ text-shadow: 4px 4px 5px  #000;
  font-size: 1.5rem; 
  text-align: center;
 }
@@ -52,7 +52,7 @@ body {
     padding: 15px;
     width: 100px;
     height: 80px;
-   border: 2px solid #A4413A;
+   border: 2px solid #fff;
     border-radius:10px;
     background-color: wheat;
     color: #fff;
@@ -66,13 +66,13 @@ body {
     padding: 15px;
     width: 100px;
     height: 80px;  
-    border: 2px solid #A4413A;
+    border: 2px solid #fff;
     border-radius:10px;
     background-color: wheat;
     color: #fff;
     box-shadow: 2px 2px 2px 2px #000;
     font-size: 1.5rem;
-    text-shadow: 2px 2px 5px  #000;
+    text-shadow: 4px 4px 5px  #000;
 }
 
 .gpa-btn:hover, .cgpa-btn:hover {
@@ -81,7 +81,7 @@ body {
     height: 90px;  
     border: 2px solid #fff;
     border-radius:10px;
-    background-color: darkblue;
+    background-color: #fff;
     color: #000;
    
 }
@@ -96,6 +96,7 @@ body {
     margin: 5px;
     padding: 5px;
     color: #fff;
+    background: wheat;
     text-align: center;
     display: flex;
     align-content: center;
