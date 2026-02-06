@@ -6,7 +6,7 @@
 
 body {
     font-size: 0.5rem;
-    background-color: rgb(95, 78, 4);
+    background-color: wheat;
  
 }
 
@@ -54,11 +54,11 @@ body {
     height: 80px;
    border: 2px solid #fff;
     border-radius:10px;
-    background-color: wheat;
-    color: #fff;
+    background-color: #fff;
+    color:  blueviolet;
     box-shadow: 2px 2px 2px 2px  #000;
     font-size: 1.5rem;
-    text-shadow: 2px 2px 5px  #000;
+    text-shadow: 2px 2px 5px   grey;
 }
 
 .cgpa-btn {
@@ -68,11 +68,11 @@ body {
     height: 80px;  
     border: 2px solid #fff;
     border-radius:10px;
-    background-color: wheat;
-    color: #fff;
+    background-color: #fff;
+    color: blueviolet;
     box-shadow: 2px 2px 2px 2px #000;
     font-size: 1.5rem;
-    text-shadow: 4px 4px 5px  #000;
+    text-shadow: 4px 4px 5px  grey;
 }
 
 .gpa-btn:hover, .cgpa-btn:hover {
@@ -81,7 +81,7 @@ body {
     height: 90px;  
     border: 2px solid #fff;
     border-radius:10px;
-    background-color: #fff;
+     
     color: #000;
    
 }
@@ -95,7 +95,7 @@ body {
 .footer, .for {
     margin: 5px;
     padding: 5px;
-    color: #fff;
+    color: #000;
     background: wheat;
     text-align: center;
     display: flex;
@@ -103,5 +103,5 @@ body {
     justify-content: space-evenly;
     font-size: 0.7rem;
     font-weight: bolder;
-    text-shadow: 2px 2px 5px  #000;
+    text-shadow: 2px 2px 5px  grey;
 }

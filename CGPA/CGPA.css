@@ -9,7 +9,7 @@
 body {
   font-size: 1rem;
   text-align: center;
-  background: rgb(95, 78, 4);
+  background: wheat;
 }
 
 .header {
@@ -71,8 +71,8 @@ body {
   font-size: 0.7rem;
   font-weight: bolder;
   background-color: wheat;
-  color: #fff;
-  text-shadow: 4px 4px 5px #000
+  color: #000;
+  text-shadow: 4px 4px 5px grey;
 }
 
 .level {

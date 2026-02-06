@@ -9,7 +9,7 @@
 body {
   font-size: 1rem;
   overflow: scroll;
-  background: rgb(95, 78, 4);
+  background: wheat;
 
 }
 
@@ -23,7 +23,7 @@ body {
 
 .logo-img {
   border-radius: 20px;
-  box-shadow: 2px 2px 2px 2px black;
+  box-shadow: 2px 2px 2px 2px grey;
   
 }
 
@@ -211,12 +211,12 @@ border: none;
   margin: 10px;
   padding: 10px;
   
-  backdrop-filter: blur(10px);
+  background-color: #fff;
   border-radius: 10px;
   text-align: center;
   font-weight: bolder;
   width: 170px;
-  box-shadow: 2px 2px 2px 2px #fff;
+  box-shadow: 2px 2px 2px 2px #000;
 }
 
 .result {
@@ -228,7 +228,7 @@ border: none;
 #Result, #Rating, .result-text {
   margin: 5px;
   padding: 5px;
-  color: #fff;
+  color: blue;
   font-size: 1.9rem;
   
   
