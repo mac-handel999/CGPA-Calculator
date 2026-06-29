@@ -1,87 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRADER.CALC | Dashboard</title>
 
-  <title> 
-  GPA-CGPA CALC/splash-screen
-  </title>
-  
-  <!-- HTML -->
-  
-
-  <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css">
-  
-  <link rel="icon" type="png" href="images/cgpa-logo.png">
+  <link rel="icon" type="image/png" href="images/cgpa-logo.png">
 </head>
 
 <body>
- <div class="container">
-   <div class="splash-logo">
-     <span class="logo-icon">
-       <img src="images/cgpa-logo.png " alt="logo image" width="200px" height="200px" class="logo-img">
-     </span><br />
-     
-     <h3 class="title"><br />
-       <b>
-         GRADER.CALC
-       </b>
-     </h3>
-   </div>
-   
-   <div class="button-section">
-     <span class="gpa">
-       <a href="/GPA/GPA.html ">
-         <button class="gpa-btn">
-         <b>GPA</b>
-         </button>
-       </a>
-     </span>
-     
-     <span class="cgpa">
-       <a href="/CGPA/CGPA.html ">
-         <button class="cgpa-btn">
-          <b>CGPA</b>
-         </button>
-       </a>
-     </span>
-   </div>
- </div>
-<br /> 
- 
- <span class="for">
-   <p>
-     <b>
-       <small>
-         FOR: CYB (CyberSecurity) - SICT, FUTO
-         & FUTO Students Community
-       </small>
-     </b>
-   </p>
- </span>
- <br />
- 
- <footer class="footer">
-   <p>
-    <small>
-    &copy;2025 All Rights Reserved ||CGPA CALC (GRADER)
-    </small>
-   </p>
-   
-   <p>
-     <small>
-       By: {FABIAN CODES HQ } 👉 {📞:07061652181}
-     </small>
-   </p>
-   <br />
-   
- </footer>
- 
- 
-  <!-- Project -->
+
+  <main class="wrapper">
+    <div class="container">
+
+      <section class="splash-logo">
+        <div class="logo-wrapper">
+          <img src="images/cgpa-logo.png" alt="GRADER.CALC Logo" width="160" height="160" class="logo-img"
+            onerror="this.style.display='none'">
+        </div>
+        <h1 class="title">GRADER.CALC</h1>
+      </section>
+
+      <section class="button-section">
+        <a href="/GPA/GPA.html" class="nav-link">
+          <button class="btn btn-primary">GPA Calculator</button>
+        </a>
+        <a href="/CGPA/CGPA.html" class="nav-link">
+          <button class="btn btn-secondary">CGPA Calculator</button>
+        </a>
+      </section>
+
+      <div class="community-tag">
+        <p>Specially customized for <strong>CYB (CyberSecurity) - SICT, FUTO</strong> & FUTO Students Community</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 || CGPA CALC (GRADER)</p>
+    <p>By: <span class="author">FABIAN CODES HQ</span></p>
+  </footer>
+
   <script src="main.js"></script>
 </body>
+
 </html>

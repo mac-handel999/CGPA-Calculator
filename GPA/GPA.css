@@ -1,238 +1,263 @@
+:root {
+  --bg-primary: #f8fafc;
+  --bg-surface: #ffffff;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --primary: #4f46e5;
+  --primary-hover: #4338ca;
+  --secondary: #0ea5e9;
+  --secondary-hover: #0284c7;
+  --accent-green: #10b981;
+  --border-color: #e2e8f0;
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
 * {
-  margin: 0px;
-  padding: 0px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,'Times New Roman', Times, serif;
-  box-sizing: border-box; 
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  font-size: 1rem;
-  overflow: scroll;
-  background: wheat;
-
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
-  padding: 15px;
+  background-color: var(--bg-surface);
+  padding: 1rem 2rem;
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: space-between;
-  background-color: wheat;
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
 }
 
-.logo-img {
-  border-radius: 20px;
-  box-shadow: 2px 2px 2px 2px grey;
-  
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
-
+.brand-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary);
+}
 
 .cgpa-btn {
-  margin: 10px;
-  padding: 15px;
-  width: 100px;
-  height: 80px;
-  border: 2px solid #fff;
-  border-radius: 10px;
-  background-color: wheat;
-  backdrop-filter: 20%;
-  color: #fff;
-  box-shadow: 2px 2px 2px 2px #000;
-  font-size: 1.5rem;
-  text-shadow: 2px 2px 5px #000;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 .cgpa-btn:hover {
-  text-shadow: 2px 2px 5px #fff;
-  width: 200px;
-  height: 90px;
-  border: 2px solid #fff;
-  border-radius: 10px;
-  background-color: #fff;
-  color: #000;
-  
-}
-.notice {
-  margin: 10px;
-  padding: 10px;
-  font-weight: bolder;
-  background-color: black;
-  color: #fff;
-  border: 2px dotted wheat;
-  border-radius: 10px;
-  text-align: center;
+  background-color: var(--primary);
+  color: white;
 }
 
-.footer {
-  margin: px;
-  padding: 15px;
-  text-align: center;
-  display: flex;
-  align-content: center;
-  justify-content: space-evenly;
-  font-size: 0.7rem;
-  font-weight: bolder;
-  background-color: wheat;
-  text-shadow: 4px 4px 5px #000;
-  color: #000;
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  flex: 1;
 }
 
-.courses {
-  margin: 0px;
-  padding: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  
- 
+.info-banner {
+  background-color: #eff6ff;
+  border-left: 4px solid var(--secondary);
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+  color: #1e3a8a;
 }
 
-.form-1 {
-  margin: 5px;
-  padding: 8px;
-  background-color: wheat;
-  color: #fff;
-  border-radius: 10px;
+.page-title {
   text-align: center;
-  display:  grid;
-  grid-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  box-shadow: 2px 2px 2px 2px #000;
+  margin-bottom: 1.5rem;
+  color: var(--text-main);
+  font-weight: 700;
 }
 
-.form-2 {
-  margin: 5px;
-  padding: 8px;
-  background-color: wheat;
-  color: #fff;
-  border-radius: 10px;
-  text-align: center;
+/* Row Headers Alignment Layout */
+.table-header {
   display: grid;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  box-shadow: 2px 2px 2px 2px #000;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  color: var(--text-muted);
 }
 
-.form-3 {
-margin: 5px;
-padding: 8px;
-background-color: wheat;
-color: #fff;
-border-radius: 10px;
-text-align: center;
-display: grid;
-flex-wrap: wrap;
-align-items: center;
-justify-content: space-evenly;
-box-shadow: 2px 2px 2px 2px #000;
+.table-header h4 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
-.form2-3 {
-  margin: 0px;
-  padding: 0px;
+/* Individual dynamic row box setup */
+.course-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 1rem;
+  background-color: var(--bg-surface);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+}
+
+.course-row input,
+.course-row select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 0.95rem;
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  outline: none;
+  transition: border 0.2s;
+}
+
+.course-row input:focus,
+.course-row select:focus {
+  border-color: var(--primary);
+  background-color: #fff;
+}
+
+.action-buttons {
   display: flex;
-  align-content: center;
-  justify-content: space-evenly;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
 }
 
-.form-1, .form-2, .form-3 {
-background: rgba(255, 255, 255, 02);
-backdrop-filter: blur(20px);
-border: none;
-}
-
-.course-codes {
-  margin-top: 8px;
-  padding: 8px;
-  background-color: whitesmoke;
-  border-radius: 10px;
-  color: #000;
-  box-shadow: 2px 3px 2px 2px #000;
-  width: 130px;
+.btn {
+  padding: 0.75rem 1.5rem;
   border: none;
-  outline: none;
-  
-  
-}
-
-.scores {
-  margin-top: 8px;
-  padding: 8px;
-  background-color: whitesmoke;
-  border-radius: 10px;
-  color: #000;
-  box-shadow: 2px 3px 2px 2px #000;
-  border: none;
-  outline: none;
-  
-}
-
-.unit {
-  margin-top: 8px;
-  padding: 8px;
-  background-color: whitesmoke;
-  border-radius: 10px;
-  color: #000;
-  box-shadow: 2px 3px 2px 2px #000;
-  border: none;
-  outline: none;
-}
-
-.calculator-btn {
-  margin: 10px;
-  padding: 10px;
-  text-align: center;
-  
-}
-
-.calc-btn {
-  margin: 10px;
-  padding: 15px;
-  background-color: wheat;
-  color: #fff;
-  border-radius: 10px;
+  border-radius: 8px;
   font-size: 1rem;
-  font-weight: bold;
-  box-shadow: 2px 2px 2px 2px #000;
-  text-shadow: 2px 2px 5px  #000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
 }
 
-.calc-btn:hover {
- background-color: #fff;
- color: black;
-  text-shadow: 2px 2px 5px  #000;
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-hover);
+}
+
+.result-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 .result-view {
-  margin: 10px;
-  padding: 10px;
-  
-  background-color: #fff;
-  border-radius: 10px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 240px;
   text-align: center;
-  font-weight: bolder;
-  width: 170px;
-  box-shadow: 2px 2px 2px 2px #000;
+  box-shadow: var(--shadow);
 }
 
-.result {
+.result-view .label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+#Result,
+#Rating {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin: 0.5rem 0;
+}
+
+#Rating {
+  color: var(--accent-green);
+  font-size: 1.75rem;
+  padding: 0.35rem 0;
+}
+
+.result-text {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.footer {
+  background-color: var(--bg-surface);
+  border-top: 1px solid var(--border-color);
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
   display: flex;
-  align-content: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
 }
 
-#Result, #Rating, .result-text {
-  margin: 5px;
-  padding: 5px;
-  color: blue;
-  font-size: 1.9rem;
-  
-  
-  
+.author {
+  font-weight: 600;
+  color: var(--text-main);
 }
- 
 
+@media (max-width: 600px) {
+  .table-header {
+    display: none;
+    /* Hide header grids on mobile view to read as unified stack cards */
+  }
+
+  .course-row {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
